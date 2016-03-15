@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Years Resolutions Data</title>
+    <link rel="stylesheet" type="text/css" href="Final_NYR.css">
+</head>
+<body>
+    <br>
+    <!-- The navigation list -->
+    <div>
+        <ul id="nav-bar">
+            <li class="link"> <a href="#intro"> Introduction </a> </li>
+            <li class="link"> <a href="#research"> Research</a> </li>
+            <li class="link"> <a href="#visqueries"> Visual Queries </a> </li>
+            <li class="link"> <a href="#design"> Initial Design</a> </li>
+            <li class="link"> <a href="#viz"> Visualization</a> </li>
+            <li class="link"> <a href="#imp"> Discussion</a> </li>
+            <li class="link"> <a href="#team"> Team</a>  </li>
+        </ul>
+    </div>
+    <div style="margin-left:15%; margin-right: 20%; padding:1px 16px; height:100%; background-color: white">
+        <section id="intro">
+
+        </section>
+        <section id="research">
+            <h2> Research </h2>
+            <p>
+                Before, we created out initial design, we searched for visualizations that had been made on the same topic. Below are some of the visualizations
+                we found and what we thought about them.
+            </p>
+            <h3> New Jersey New Year's Resolutions </h3>
+            <div>
+                <div class="chart_exp">
+                    <p> We did not like this visualization because they used a pie chart and did not show discrete information i.e number breakdown. The
+                        pie chart was interactive as seen <a href="https://plot.ly/~sstirling/1048/new-jersey-new-years-resolutions/" >here</a> but the
+                        interactivity did not reveal any more information than before. However, we did like the use different colours for the different
+                        categories.</p>
+                </div>
+                <div class="chart">
+                    <img src="research1.PNG" border="1">
+                </div>
+            </div>
+            <br> <br> <br> <br>
+            <h3> Most Common New Year's Resolutions</h3>
+            <img src="research2.PNG" border="1">
+            <p>
+                We did not like anything particular with this visualization but rather had more questions. The graph does not specify which units are being used.
+                The percentage sign next to one of the numbers indicates that the numbers were percentages however the total is greater than 100.
+            </p>
+            <h3> New Year's Resolutions by State 2016 </h3>
+            <img src="research3.PNG" border="1">
+            <p>
+                This <a href="http://mentalfloss.com/article/73426/most-popular-new-years-resolutions-each-state">visualization</a> used a map
+                to show the most popular resolution in each state in the United States and is closer to what we are trying to do.
+            </p>
+            <p>
+                One can easily identify which category dominated in each state. Furthermore, they used both color and a symbol to
+                distinguish one category from another
+                which we liked. Most of the symbols were easy to understand and a key(not shown here) was provided.
+            </p>
+            <p>
+                One of the drawbacks of this design is that people who are not familiar with the map of USA would find it difficult to identify
+                the states. The visualization does not allow for comparisons to be made between the different states or categories.
+            </p>
+
+            <h3> All resolution categories</h3>
+            <img src="research4.PNG" border="1">
+            <br>
+            <p>
+                More information about this visualization can be seen <a href="http://www.fastcoexist.com/3024280/visualized/visualizing-the-new-years-resolutions-were-
+               all-trying-not-to-break">here</a>. The slider enables a user to select a time range and we decided to add this to our visualization. The visualization also shows the different
+                sub-categories and how they performed within the main category. We did not like the use of pie charts.
+            </p>
+            <h3> Conclusion</h3>
+            <p>
+                After analysing different visualizations, some not shown here, we decided to use an interactive map to display our data.
+                The map would enable us see all the data points at the same as well as make comparisons using different dimensions.
+            </p>
+        </section>
+        <section id="visqueries">
+            <h2> Visual queries</h2>
+            <p>
+                With our visualization, we want to be able to answer the following questions:
+            </p>
+            <ul class="list">
+                <li> What is the distribution of tweets per category throughout the nation or in a state? </li>
+                <li> How do the genders compare in different categories? </li>
+                <li> How do any 2 given states compare overall or in a particular category?</li>
+                <li> In which state is a particular category prevalent?</li>
+                <li> What is the spread of tweets per gender throughout the nation or in a given state?</li>
+            </ul>
+        </section>
+        <section id="design">
+            <h2> Initial Design</h2>
+            <img src="initialMap.PNG">
+            <br>
+            <p>
+                The initial design included a map and supporting graphs (below) to show discrete information about the data. We used a map in order
+                to show all the data points in the data set at the same time and how they are spread out. Each point on the map represents a tweet
+                and the location from which it was tweeted. Users can get all the information about a data point by clicking on it (shown on image above).
+                The slider below the map allows users to select the range of time
+            </p>
+            <p>
+                Above the map, there are checkboxes with each checkbox representing a category or a gender (male and female). This will enable a user select any number of categories and
+                that would change the map to show only selected categories.
+            </p>
+            <img src="initialGender.PNG">
+            <br> <br> <br>
+            <img src="initialCategories.PNG">
+            <br>
+        </section>
+        <section id="viz">
+            <h2> Visualization</h2>
+        </section>
+        <section id="imp">
+            <h2> Discussion </h2>
+            <p>
+                The final implementation is very similar to our initial design.This was expected as we did not get a lot of negative feedback after our 1st presentation.<br>
+                With this visualization, we are able to:
+            </p>
+            <ul class="list">
+                <li> Show all the information about each tweet and its location on the map</li>
+                <li> View all the information for only 1 state or category</li>
+                <li> Compare any 2 states</li>
+                <li> Compare any number of categories at the same time</li>
+                <li> Compare the 2 genders by each category and state</li>
+            </ul>
+            <h3> Strengths </h3>
+            <p>
+                The visualization is interactive and enables users to choose what information they would like to view at a particular time. Furthermore,
+                the visualization covered the 4 main categories discussed by Ben Shneiderman. These are Overview, Zoom, Filter and Details on Demand.
+                The map provided the overview while the interactivity provided the other 3.
+            </p>
+            <h4>Overview:</h4>
+            <p>
+                The map overview (before any interaction) allows a user to see all the data points at the same time. From this, the user can notice patterns or
+                see which categories are popular in which areas.
+            </p>
+            <h4>Zoom and filter:</h4>
+            <p>
+                Users can zoom into a particular state and will be able to view that information better. The graphs will also show discrete information about
+                that particular state. Using the same functionality, comparisons can be made between 2 states.
+            </p>
+            <p>
+                Filtering can be done on both the categories and the genders. This allows users to see information about a specific category in a specific state
+                or on the entire map. Filtering also changes the graphs to enable users get more information about the category or gender they have selected.
+            </p>
+            <h4>Details on demand:</h4>
+            <p>
+                Clicking on a point on the map shows all the information about that data point on the map. This allows a user to get all the information about
+                that tweet while having an overview in the background.
+            </p>
+            <h3> Weaknesses </h3>
+            <h3> Conclusion</h3>
+        </section>
+        <section id="team">
+            <h2> Team </h2>
+            <p>
+                The group worked together and used the <a href="https://slack.com/">Slack</a> application for communication and file sharing.
+                Google drive was also used to share files as well work collaboratively. All the members agreed on the final design. Some of
+                the work was divided up among the 3 members in the following way:
+            </p>
+            <table cellpadding="10%">
+                <thead align="left">
+                <tr>
+                    <th>Name</th>
+                    <th>Work done</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Michael Kyeyune</td>
+                    <td>Implementation of the map and coordinates</td>
+                </tr>
+                <tr>
+                    <td>Thandile Xiphu</td>
+                    <td>Implementation of the graphs</td>
+                </tr>
+                <tr>
+                    <td>William Lumala</td>
+                    <td>Editing HTML code and web page layout</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
